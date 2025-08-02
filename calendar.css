@@ -1,0 +1,50 @@
+
+
+.calendar-div {
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px; 
+    align-items: center; 
+  }
+  
+  .calendar-text {
+    color: rgb(241, 241, 139);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size:65px;
+    text-decoration: underline;
+  }
+  
+  .calendardiv-two {
+    display: flex; 
+    justify-content: center;
+    min-height: 400px;
+    align-items: center;
+    margin-top: 25px; 
+  }
+  
+  .inside-div {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inside-div p {
+    font-size: 50px;
+    width: 500px; 
+    color: white; 
+    text-align: center; 
+    margin: 0; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 10px; 
+  }
+  
+  .calendar-pic {
+    width: 900px; 
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /* Add this to ensure .main-content grows */
+  .main-content {
+    flex: 1 0 auto;
+  }

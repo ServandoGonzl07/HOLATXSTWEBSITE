@@ -1,0 +1,90 @@
+h1{
+
+margin: 0;  
+padding: 0; 
+color: rgb(241, 241, 139); 
+font-size: 50px; 
+}
+
+p{
+
+margin: 0;
+padding: 0; 
+
+}
+.faq-text{
+
+  color: rgb(241, 241, 139);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+font-size: 100px; 
+text-align: center;
+margin: 0px 0px 20px 0px ; 
+padding: 0; 
+text-decoration: underline;
+
+}
+
+.faq-textwo{
+
+color: white; 
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+font-size: 55px; 
+text-align: center;
+margin: 0; 
+padding: 0; 
+
+}
+
+.faq-textwo h1{
+
+font-size: 65px; 
+
+}
+
+.background{
+
+background-color: rgb(167, 47, 47); 
+width: fit-content; 
+padding: 10px 10px 10px 10px; 
+
+
+}
+
+.answer {
+  color: white;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  font-size: 35px;
+  margin: 0;
+  padding: 0 15px;
+  cursor: pointer; 
+}
+
+.answer.open {
+  opacity: 1;
+
+}
+
+.test-div{
+
+display: flex; 
+justify-content: center;
+margin-bottom: 20px; 
+
+}
+
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-right: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.arrow.open {
+    transform: rotate(90deg);
+
+}

@@ -1,0 +1,154 @@
+html,body{
+  height: 100%; 
+    margin: 0; 
+    padding: 0;
+
+    
+
+
+}
+
+  body {
+    height: 
+    fit-content; 
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(149, 49, 49); 
+    }
+    .main-content {
+      flex: 1;
+    }
+
+
+
+footer.copyright-laws {           /* Pushes the footer to the bottom */
+  /* Optional styling: */
+  background: rgb(153, 36, 36);
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1em;
+  margin-top: 10px; 
+}
+
+html{
+
+scroll-behavior: smooth;
+
+}
+
+
+.toprow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.right, .left {
+  flex: 1;
+  min-width: 180px;
+}
+
+.middle {
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+.middle a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the text color from parent element */
+}
+
+.middle p {
+
+font-size: 80px; 
+color:  rgb(255, 255, 255); 
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: bold;
+
+}
+
+
+.right{
+margin-left: 15px; 
+}
+
+.right p {
+
+color: white; 
+font-size: 23px; 
+font-family: Georgia, 'Times New Roman', Times, serif; 
+
+}
+
+.insta,.example{
+
+width: 50px; 
+height: 50px; 
+margin-right: 20px; 
+}
+
+.xlogo{
+
+width: 50px;
+height: 50px; 
+margin-right: 20px; 
+
+}
+.social-flex{
+
+justify-content: space-between; 
+
+}
+
+
+
+.toprow-div{
+    background-color: rgb(170, 46, 46); 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 0; 
+    padding-bottom: 0; 
+
+}
+
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-effect{
+
+    opacity: 0;                               /* Start invisible */
+    animation: fadeInDown 1.0s ease forwards;     /* Animation name, duration, easing, keep final state */
+    animation-delay: 0.1s;                    /* Delay before starting */
+
+  }
+
+.right-side{
+
+  display: flex; 
+  justify-content: right; 
+}
+
+.left{
+
+margin-right: 15px; 
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+h2{
+
+color: rgb(241, 241, 139); 
+font-size: 70px; 
+margin: 35px 0px 0px 0px ; 
+
+}
+
+.offer-text{
+
+    color:rgb(241, 241, 139);
+    font-size: 85px; 
+    margin: 35px 0px 0px 0px ; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 50px; 
+    text-decoration: underline;
+
+}
+
+.espera-text{
+
+
+justify-content: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: center; 
+
+
+}
+
+.espera-inside{
+
+  color: rgb(241, 241, 139); 
+  font-size: 100px; 
+  margin: 35px 0px 0px 0px ; 
+  justify-content: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: center; 
+
+  }
+
+
+
+.inside-text{
+
+margin-right: 20px; 
+color: white; 
+font-size: 35px; 
+margin-left: 20px; 
+
+}
+
+.inside-first{
+
+display: flex; 
+
+}
+
+.picture{
+
+width: 500px; 
+height: 730px; 
+object-fit: cover;
+border-radius: 25px; 
+
+}
+
+.first-row{
+
+display: flex; 
+justify-content: center;
+
+}
+
+.familia1,.familia2,.familia3{
+
+    background-color: rgb(167, 47, 47); 
+    padding: 0px 20px 0px 20px; 
+}
+
+.unete-button{
+margin-top: 20px; 
+color: white; 
+background-color: darkred; 
+padding: 0px 30px 0px 30px; 
+border: none; 
+font-size: 80px; 
+border-radius: 50px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+transition:  
+padding 0.2s ease,
+background-color 0.2s ease; 
+
+
+}
+
+.unete-button:hover{
+
+background-color: rgb(172, 47, 47); 
+cursor: pointer; 
+padding: 0px 40px 0px 40px; 
+
+}
+
+.membresia-picture{
+
+    width: 500px; 
+    height: 450x; 
+    object-fit: cover;
+    border-radius: 25px; 
+
+}
+
+.main-content{
+
+flex: 1 0 auto; 
+
+
+}
+
+
+.familia1{
+
+    opacity: 0;                               /* Start invisible */
+    animation: fadeInDown 0.75s ease forwards;     /* Animation name, duration, easing, keep final state */
+    animation-delay: 0.2s;                    /* Delay before starting */
+  
+  
+  }
+  .familia2{
+  
+    opacity: 0;                               /* Start invisible */
+    animation: fadeInDown 0.75s ease forwards;     /* Animation name, duration, easing, keep final state */
+    animation-delay: 0.3s;                    /* Delay before starting */
+  
+  
+  }
+  .familia3{
+  
+    opacity: 0;                               /* Start invisible */
+    animation: fadeInDown 0.75s ease forwards;     /* Animation name, duration, easing, keep final state */
+    animation-delay: 0.4s;                    /* Delay before starting */
+  
+  
+  }
+
+  .picture{
+  
+    opacity: 0;                               /* Start invisible */
+    animation: fadeInDown 0.75s ease forwards;     /* Animation name, duration, easing, keep final state */
+    animation-delay: 0.5s;                    /* Delay before starting */
+  
+  
+  }
+
+  
+
+
+

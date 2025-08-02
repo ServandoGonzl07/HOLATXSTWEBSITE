@@ -1,0 +1,59 @@
+.selectrow{
+display: flex;  
+justify-content: center; 
+color: white;  
+font-family: Georgia, 'Times New Roman', Times, serif; 
+font-size: 29px; 
+align-items: center; 
+gap: 150px; 
+    position: sticky;
+    top: 90px; /* Adjust accordingly */
+    z-index: 999;
+    background: rgb(153, 36, 36);
+    margin-top: 0; 
+    padding-top: 4px; 
+    padding-bottom: 4px; 
+    top: 98px; 
+width: 100%; 
+}
+
+
+
+.selectrow div {
+    position: relative;
+    cursor: pointer;
+    /* Optional: Add some padding for better hit area */
+    padding: 4px 0;
+  }
+  
+  .selectrow div::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: #fff; /* Or pick your favorite color */
+    transition: width 0.3s cubic-bezier(.4,0,.2,1);
+    border-radius: 2px;
+  }
+  
+  .selectrow div:hover::after {
+    width: 100%;
+  }
+  
+  /* Remove the default text-decoration underline on hover */
+  .selectrow div:hover {
+    text-decoration: none;
+  }
+
+  .selectrow div a {
+
+    color: white; 
+    text-decoration: none; 
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+
+  }
+

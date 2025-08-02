@@ -1,0 +1,320 @@
+
+
+.background-video{
+
+width: 100%; 
+height: 500px;
+object-fit: cover;
+}
+
+
+.video-div{
+    margin-top: 56px; 
+    margin-bottom: 50px; 
+}
+
+.rectangle::before{
+    content: "";
+    display: block;
+    width:50%; 
+    height: 5px;
+    background-color: rgb(170, 46, 46); 
+  
+}
+
+.rectangle-third::before{
+    content: "";
+    display: block;
+    width: 50%; 
+    height: 5px;
+    background-color: rgb(197, 38, 38); 
+    margin-top: 30px; 
+
+}
+
+.video-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 50px;
+}
+
+
+.video-flex-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    background-color: rgb(126, 29, 29);
+    padding-top: 20px;  
+  }
+ 
+
+.video-text-top {
+    margin-bottom: 1px;
+
+  }
+  
+  .video-text-bottom {
+    margin-top:1px;
+  }
+  
+  .video-div {
+    margin: 0; /* Remove the top/bottom margin if you want tight spacing, or adjust as needed */
+  }
+
+  .join-text{
+
+    font-size: 105px; 
+    margin: 0; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    color:rgb(241, 241, 139);
+  }
+
+  .familia-text{
+
+    font-size: 150px; 
+    margin: 0; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    color: rgb(241, 241, 139); 
+    letter-spacing: 10px;
+
+  }
+
+  p{
+
+    margin: 0; 
+    
+    }
+    .metas-div{
+    
+    margin-top: 80px; 
+    
+    }
+    
+    .one h1{
+    
+    color: rgb(241, 241, 139); 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 85px; 
+    margin: 0; 
+    
+    }
+    .one{
+    
+    margin-left: 30px; 
+    
+    
+    }
+    
+    .meta-text{
+    
+    color: white; 
+    font-weight: bold;
+    font-size: 28px; 
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 10px; 
+    margin-left: 10px; 
+    
+    }
+    
+    .copyright-laws{  
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    
+    }
+    
+    .metas-flex,.metas-flexdos{
+    
+    
+    display: flex; 
+    justify-content: center; 
+    
+    }
+    
+    .metas-flexdos{
+    
+    margin-top: 80px; 
+    
+    }
+    
+    .one-two h1{
+    
+        color: rgb(241, 241, 139); 
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+        font-size: 85px; 
+        margin: 0; 
+    
+    }
+    
+    .one-two{
+        margin-right: 25px;
+    
+    
+    }
+    
+    .evento-flex{
+    
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 48px; 
+    color: white; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    background-color: rgb(170, 46, 46); 
+    max-width: fit-content;
+    
+    margin: 0 auto; 
+    
+    }
+    
+    .junta-pic{
+    
+    width: 500px; 
+    height: 500px; 
+    
+    }
+     
+    .event-div{
+    
+    justify-content: center; 
+    text-align: center; 
+    
+    }
+    
+    .proximo-div{
+    
+    color: white; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 40px; 
+    background-color: rgb(170, 46, 46); 
+    margin-right: 15px; 
+    margin-left: 15px; 
+    max-width: fit-content;
+    width: fit-content; 
+    margin: 0 auto; 
+    text-align: left; 
+    padding-right: 500px; 
+    padding-left: 50px; 
+    
+    
+    
+    }
+    
+    .eventext-flex{
+    
+    text-align: center; 
+    padding-left: 100px; 
+    padding-right: 100px; 
+    
+    
+    }
+    
+    .membership_href{
+    
+    text-decoration: none; 
+    color: inherit; 
+    
+    
+    }
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateY(60px);
+      transition: opacity 1s ease, transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .metas-div{
+    
+    margin-bottom: 50px; 
+    
+    }
+    
+    .image-stack {
+      position: relative;
+      width: 500px;
+      height: 350px;
+      margin: 0 auto;
+    }
+    .holapic {
+      width: 500px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      position: relative;
+      z-index: 1; /* Lower z-index: behind */
+    }
+    .bobcat-creep {
+      position: absolute;
+      left:6%;
+      top: -110px; /* Or your desired "creep out" position */
+      transform: translateX(-55%) rotate(-35deg);
+      width: 170px;
+      height: auto;
+      z-index: 2; /* Higher z-index: on top */
+      filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4));
+      transition: top 0.3s;
+    }
+    
+    .newpic-creep {
+      position: absolute;
+      right: -42%; 
+      top: -94px; /* Moves "newpic" up to overlap */
+      transform: translateX(-50%) rotate(-10deg); /* Optional rotation */
+      width: 220px; /* Adjust to fit your effect */
+      height: auto;
+      z-index: 2; /* On top */
+      filter: drop-shadow(0 8px 16px rgba(0,0,0,0.4));
+      transition: top 0.3s;
+      filter: invert(77%) sepia(66%) saturate(200%) hue-rotate(357deg) brightness(110%);
+    
+    }
+    
+    .shadow-box1,.shadow-box2 {
+      /* Existing styles */
+      display: flex;
+      justify-content: center;
+    
+      /* Add these for shadow and 3D effect */
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      background: rgb(163, 42, 42); /* Soft light background */
+      border-radius: 16px;
+      backdrop-filter: blur(2px); /* Optional: for glassmorphism effect */
+    
+    }
+    
+    .shadow-box1{
+    
+      padding: 0px 75px 0px 0px; 
+    
+    }
+    
+    .shadow-box2{
+    
+      padding: 0px 0px 0px 75px; 
+    
+    }
+    
+    .bottom-div{
+    
+    background-color: rgb(126, 29, 29);
+    height: 28%; 
+    
+    
+    }
+    
+
+
+
+
+
+
