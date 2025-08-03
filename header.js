@@ -12,12 +12,12 @@ document.write(`
             <div class="right-side">
               <div style="display: inline-flex;">
                 <a href="https://www.instagram.com/holatxst/" target="_blank" rel="noopener noreferrer">
-                  <img class="example" src="../images/insta.png">
+                  <img class="example" src="insta.png">
                 </a>
               </div>
-              <img class="xlogo" src="../images/xlogo.png">
-              <img class="example" src="../images/fblogo.png">
-              <img class="example" src="../images/linkedin.png">
+              <img class="xlogo" src="xlogo.png">
+              <img class="example" src="fblogo.png">
+              <img class="example" src="linkedin.png">
             </div>
           </div>
         </div>
