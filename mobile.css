@@ -150,7 +150,7 @@
     position: relative;
   }
   .holapic {
-    width: 100%;
+    width: 80%;
     max-width: 350px;
     height: auto;
     border-radius: 8px;
@@ -160,7 +160,7 @@
     z-index: 1;
   }
   .bobcat-creep, .newpic-creep {
-    width: 70px;
+    width: 90px;
     min-width: 55px;
     max-width: 90px;
     height: auto;
