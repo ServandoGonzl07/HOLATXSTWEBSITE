@@ -187,11 +187,11 @@
     width: 98vw;
   }
   .proximo-div {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     background-color: rgb(170, 46, 46);
     color: white;
     margin: 0.5em auto;
-    padding: 0.5em 1em;
+    padding: 0.0em 4em;
     max-width: 95vw;
     width: fit-content;
     text-align: center;
@@ -233,4 +233,3 @@
     word-break: break-word;
   }
 }
-
