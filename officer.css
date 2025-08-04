@@ -96,6 +96,69 @@ margin-top: 20px;
     margin-bottom: 0px; /* or 0, or any value you like */
     margin-top: 20px; 
   }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+      padding: 0.2em 0;
+    }
+  
+    .meet {
+      font-size: 2.2rem;
+      margin-top: 12px;
+      margin-bottom: 8px;
+      word-break: break-word;
+      padding: 0 0.2em;
+    }
+  
+    .officer-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      margin: 16px 0;
+      width: 100vw;
+      align-items: center;
+    }
+  
+    .officer-div {
+      width: 50vw;
+      min-width: 0;
+      border-radius: 12px;
+      margin-bottom: 0.7em;
+    }
+  
+    .officer-text {
+      font-size: 1.2rem;
+      word-break: break-word;
+    }
+  
+    .officer-name {
+      font-size: 1.6rem;
+      word-break: break-word;
+      padding: 0 0.1em;
+    }
+  
+    .officer-pic {
+      width: 50vw;
+      max-width: 320px;
+      height: 50vw; 
+      min-width: 0;
+      border-radius: 8px;
+      margin: 0 auto;
+      display: block;
+    }
+  
+    .flex-inside {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .officer-div p {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      padding: 0 0.3em;
+    }
+  }
 
 
 
