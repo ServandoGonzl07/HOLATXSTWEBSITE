@@ -152,8 +152,7 @@ flex: 1 0 auto;
   
   }
 
-
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     /* Membership Section Mobile Styles */
   
     .offer-text {
@@ -204,7 +203,7 @@ flex: 1 0 auto;
       width: 85vw !important;
       max-width: 95vw !important;
       height: auto !important;
-      max-height: 35vw; 
+      max-height: 25vw; 
       margin: 12px auto;
       display: block;
     }
@@ -234,6 +233,22 @@ flex: 1 0 auto;
       margin-top: 15px;
       margin-bottom: 10px;
     }
+      .first-row .inside-first {
+        display: flex;
+        flex-direction: column !important;
+      }
+      .first-row .inside-first .inside-text {
+        order: 1;
+        width: 100%;
+      }
+      .first-row .inside-first .membresia-picture-div {
+        order: 2;
+        width: 100%;
+      }
+
+    
+
+    
   
     /* Copyright law footer padding for mobile */
     footer.copyright-laws {
@@ -243,7 +258,9 @@ flex: 1 0 auto;
       line-height: 1.3;
     }
   }
+
   
+
 
 
 
