@@ -88,3 +88,49 @@ margin-bottom: 20px;
     transform: rotate(90deg);
 
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    padding: 0.2em 0;
+  }
+
+  .faq-text {
+    font-size: 3.4rem;
+    padding: 0.5em 0 0 0 ;
+    word-break: break-word;
+  }
+
+  .faq-textwo {
+    font-size: 1.3rem;
+    padding: 0.3em 0.0em;
+    word-break: break-word;
+  }
+
+  .faq-textwo h1 {
+    font-size: 2.2rem;
+  }
+
+  .background {
+    width: 95vw;
+    padding: 10px 2vw;
+    box-sizing: border-box;
+    margin: 0 auto 8px auto;
+  }
+
+  .answer {
+    font-size: 1.5rem;
+    padding: 0 0.5em;
+  }
+
+  .test-div {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+    margin-right: 0.4em;
+  }
+}
