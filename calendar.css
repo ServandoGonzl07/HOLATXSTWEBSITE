@@ -48,3 +48,51 @@
   .main-content {
     flex: 1 0 auto;
   }
+
+
+  @media (max-width: 768px) {
+    .calendar-text {
+      font-size: 2.2rem;
+      padding: 0.4em 0.1em;
+      text-decoration: underline;
+      word-break: break-word;
+    }
+
+    .calendar-div {
+      margin-top: 10px;
+      padding: 0 0.5em;
+    }
+
+    .calendardiv-two {
+      min-height: unset;
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .inside-div {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .inside-div p {
+      font-size: 1.8rem;
+      width: 90vw;
+      margin-right: 0;
+      margin-bottom: 1.2em;
+      padding: 0 0.2em;
+      text-align: center;
+    }
+
+    .calendar-pic {
+      width: 90vw;
+      max-width: 350px;
+      height: auto;
+      min-width: 0;
+      border-radius: 8px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
