@@ -13,7 +13,7 @@ const officers = [
   { name: "Adrian Romero", role: "Academic Coordinator", img: "junta.png" },
   { name: "Anahi Silva", role: "Historian", img: "junta.png" },
   { name: "Mia Zermeno", role: "Historian", img: "junta.png" },
-  { name: "Luis Aricheaga", role: "Recruiter", img: "junta.png" },
+  { name: "Luis Arechiga", role: "Recruiter", img: "junta.png" },
   { name: "Myra Benett", role: "Recruiter", img: "junta.png" },
   { name: "Donna Avila", role: "Music Coordinator", img: "junta.png" }
 ];
