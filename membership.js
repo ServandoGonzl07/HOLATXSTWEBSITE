@@ -1,8 +1,6 @@
-
-// Function to insert <br> after every 8 words in selected paragraphs
 document.addEventListener("DOMContentLoaded", function() {
     // Select all <p> elements inside elements with class "familia"
-    const paragraphs = document.querySelectorAll('.familia1 p,.familia2 p,.familia3 p');
+    const paragraphs = document.querySelectorAll('.familia1 p,.familia2 p,.familia3 p,.familia4 p, .familia5 p');
 
     paragraphs.forEach(function(paragraph) {
         // Split the text into words
