@@ -81,3 +81,21 @@ document.addEventListener("DOMContentLoaded", function() {
       paragraph.innerHTML = newHTML.trim();
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const selectRow = document.querySelector('.selectrow');
+
+  if (menuToggle && selectRow) {
+    menuToggle.addEventListener('click', function() {
+      selectRow.classList.toggle('active');
+      if (selectRow.classList.contains('active')) {
+        menuToggle.innerHTML = '&times;';
+        menuToggle.setAttribute('aria-label', 'Close menu');
+      } else {
+        menuToggle.innerHTML = '&#9776;';
+        menuToggle.setAttribute('aria-label', 'Open menu');
+      }
+    });
+  }
+});
