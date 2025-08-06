@@ -346,6 +346,19 @@ width: 100vw;
       animation: fadeInDown 0.75s ease forwards;
       animation-delay: 0.8s;
     }
+
+ @media (max-width: 768px) {
+
+      .video-div img{
+
+        width: 100vw; 
+        height: 56vw; 
+        object-fit: cover; 
+        
+        
+        }
+
+    } 
     
 
 
