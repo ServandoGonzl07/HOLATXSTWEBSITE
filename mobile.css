@@ -28,12 +28,13 @@
     width: 100%;
   }
   .middle p {
-    font-size: 4.0rem; 
+    font-size: 4.8rem; 
     word-break: break-word;
+    line-height: 5rem; 
   }
   .insta, .example, .xlogo {
-    width: 38px;
-    height: 38px;
+    width: 45px;
+    height: 45px;
     margin: 8px 6px;
   }
   .right-side {
@@ -129,7 +130,7 @@
     width: 100%;
   }
   .one h1, .one-two h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     word-break: break-word;
   }
   .meta-text {
@@ -140,14 +141,14 @@
     line-height: 1.5;
   }
   .image-stack {
-    width: 90vw;
+    width: 100vw;
     max-width: 350px;
     height: auto;
     margin: 0 auto;
     position: relative;
   }
   .holapic {
-    width: 85%;
+    width: 97vw; 
     max-width: 350px;
     height: auto;
     border-radius: 8px;
@@ -157,19 +158,19 @@
     z-index: 1;
   }
   .bobcat-creep, .newpic-creep {
-    width: 90px;
+    width: 125px;
     min-width: 55px;
-    max-width: 90px;
+    max-width: 150px;
     height: auto;
     position: absolute;
-    left: 10%;
-    top: -44px;
+    left: 5%;
+    top: -70px;
     z-index: 2;
   }
   .newpic-creep {
-    right: -20%;
+    right: -40%;
     left: unset;
-    top: -32px;
+    top: -300px;
   }
 
   /* Event Section */
@@ -200,8 +201,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
-    padding: 0.5em 0;
+    font-size: 0rem;
+
     background-color: rgb(170, 46, 46);
     border-radius: 0px;
     margin: 0.5em auto;
@@ -211,12 +212,13 @@
   .eventext-flex {
     text-align: center;
     padding: 0.4em 0.5em;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .junta-pic {
-    width: 50vw;
-    max-width: 320px;
-    height: auto;
+    width: 87vw;
+    max-width: 320vw;
+    height: 50vw; 
+    object-fit: cover;
     border-radius: 8px;
     margin: 0.7em auto;
     display: block;
@@ -228,7 +230,6 @@
     color: #fff;
     border: none;
     font-size: 2.5rem;
-    padding: 0.5em 1em;
     cursor: pointer;
     width: 100vw;
     text-align: left;
@@ -246,6 +247,10 @@
     transition: max-height 0.8s cubic-bezier(.9,0.9,.9,1);
   }
 
+  
+
+  
+
   /* Footer */
   footer.copyright-laws {
     font-size: 0.95em;
@@ -257,6 +262,8 @@
     word-break: break-word;
   }
 }
+
+
 
 
 
