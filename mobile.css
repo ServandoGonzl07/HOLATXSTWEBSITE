@@ -194,8 +194,6 @@
     width: 98vw;
   }
   .proximo-div {
-    font-size: 1.5rem;
-    background-color: rgb(170, 46, 46);
     color: white;
     margin: 0.5em auto;
     padding: 0.0em 4em;
@@ -203,6 +201,12 @@
     width: fit-content;
     text-align: center;
   }
+  .proximo-text{
+
+    font-size: 4.0rem; 
+
+  }
+
   .evento-flex {
     flex-direction: column;
     align-items: center;
@@ -218,7 +222,7 @@
   .eventext-flex {
     text-align: center;
     padding: 0.4em 0.5em;
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
   .junta-pic {
     width: 83.4vw;
@@ -268,6 +272,8 @@
     word-break: break-word;
   }
 }
+
+
 
 
 
