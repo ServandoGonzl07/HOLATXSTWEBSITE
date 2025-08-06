@@ -23,6 +23,9 @@ document.write(`
         </div>
       </div>
     </div>
+
+ <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+    
     <div class="selectrow">
       <div class ="membership">
         <a href="membership.html">Membership</a>
