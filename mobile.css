@@ -80,9 +80,15 @@
   .video-text-top, .video-text-bottom {
     margin: 0.25em 0;
   }
-  .join-text, .familia-text {
+  .join-text{
+    margin-top: 0.2em; 
     font-size: 15vw;
-    margin: 0.2em 0;
+    word-break: break-word;
+    letter-spacing: 2px;
+  }
+
+  .familia-text {
+    font-size: 20vw;
     word-break: break-word;
     letter-spacing: 2px;
   }
@@ -148,7 +154,7 @@
     position: relative;
   }
   .holapic {
-    width: 97vw; 
+    width: 100vw; 
     max-width: 350px;
     height: auto;
     border-radius: 8px;
@@ -215,7 +221,7 @@
     font-size: 2rem;
   }
   .junta-pic {
-    width: 87vw;
+    width: 83.4vw;
     max-width: 320vw;
     height: 50vw; 
     object-fit: cover;
