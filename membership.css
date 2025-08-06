@@ -19,7 +19,7 @@ h2 {
 .offer-text {
   color: var(--main-yellow);
   font-size: 85px;
-  margin: 100px 0 0 50px;
+   margin: 10px 0 0 50px;
   font-family: var(--main-font);
   text-decoration: underline;
 }
