@@ -2,7 +2,7 @@ document.write(`
     <div class="toprow-div">
       <div class="toprow">
         <div class="right">
-          <p>Hispanic Organization <br> for Leadership & <br>Advancement</p>
+          <p>Hispanic Organization for <br> Leadership & Advancement</p>
         </div>
         <div class="middle">
           <a href="index.html" rel="noopener noreferrer"><p>HOLA</p></a>
