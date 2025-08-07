@@ -15,11 +15,12 @@ h2 {
   margin: 35px 0 0 0;
 }
 
+
 /* Offer Text */
 .offer-text {
   color: var(--main-yellow);
   font-size: 85px;
-   margin: 10px 0 0 50px;
+  margin: 10px 0 0 50px;
   font-family: var(--main-font);
   text-decoration: underline;
 }
@@ -234,13 +235,13 @@ h2 {
     text-align: center;
   }
   .espera-inside {
-    font-size: 2.2rem !important;
+    font-size: 3.5rem !important;
     margin: 0.2em 0 !important;
     text-align: center;
   }
   .unete-button {
-    font-size: 2.1rem !important;
-    padding: 0.2em 1.2em !important;
+    font-size: 3.0rem !important;
+    padding: 0.1em 0.8em !important;
     border-radius: 30px;
     margin: 15px 0 10px 0;
   }
@@ -256,6 +257,8 @@ h2 {
   .familia5{animation-delay: 0.65s;}
 
 
+
+
   /* Copyright law footer padding for mobile */
   footer.copyright-laws {
     font-size: 0.89em;
@@ -264,8 +267,6 @@ h2 {
     line-height: 1.3;
   }
 }
-
-  
 
 
 
