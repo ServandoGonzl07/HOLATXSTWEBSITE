@@ -52,7 +52,7 @@
 
   @media (max-width: 768px) {
     .calendar-text {
-      font-size: 2.2rem;
+      font-size: 2.0rem;
       padding: 0.4em 0.1em;
       text-decoration: underline;
       word-break: break-word;
