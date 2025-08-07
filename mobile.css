@@ -229,9 +229,9 @@
     max-width: 320vw;
     height: 50vw; 
     object-fit: cover;
-    border-radius: 8px;
     margin: 0.7em auto;
     display: block;
+    padding: 0; 
   }
 
   .menu-toggle {
