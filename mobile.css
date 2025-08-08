@@ -257,6 +257,11 @@
     transition: max-height 0.8s cubic-bezier(.9,0.9,.9,1);
   }
 
+  .meet{
+
+  font-size: 4.0rem; 
+    
+  }
   
 
   
