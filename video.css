@@ -82,7 +82,7 @@
     
     color: white; 
     font-weight: bold;
-    font-size: 28px; 
+    font-size: 34px; 
     font-family: 'Times New Roman', Times, serif;
     margin-right: 10px; 
     margin-left: 10px; 
@@ -123,6 +123,12 @@
     
     
     }
+
+    .one,.one-two{
+
+      padding-top: 20px; 
+
+    }
     
     .evento-flex{
     
@@ -141,10 +147,13 @@
     
     .junta-pic{
     
-    width: 500px; 
+    padding-top: 10px; 
+    width: 450px; 
     height: 500px; 
     padding-right: 10px; 
-        padding-top: 10px; 
+  
+      
+
     
     }
      
