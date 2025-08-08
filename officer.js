@@ -25,7 +25,7 @@ officers.forEach(officer => {
     <div class="officer-div">
         <div class="flex-inside">
             <div class="officer-inside">
-                <img class="officer-pic" src="${blank.png}" alt="${officer.name}">
+                <img class="officer-pic" src="blank.png" alt="${officer.name}">
             </div>
             <div class="officer-text">
            <h1>${officer.role}</h1>
