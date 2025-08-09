@@ -1,136 +1,147 @@
 h1{
 
-margin: 0;  
-padding: 0; 
-color: rgb(241, 241, 139); 
-font-size: 50px; 
-}
-
-p{
-
-margin: 0;
-padding: 0; 
-
-}
-.faq-text{
-
-  color: rgb(241, 241, 139);
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-font-size: 100px; 
-text-align: center;
-margin: 0px 0px 20px 0px ; 
-padding: 0; 
-text-decoration: underline;
-
-}
-
-.faq-textwo{
-
-color: white; 
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-font-size: 55px; 
-text-align: center;
-margin: 0; 
-padding: 0; 
-
-}
-
-.faq-textwo h1{
-
-font-size: 65px; 
-
-}
-
-.background{
-
-background-color: rgb(167, 47, 47); 
-width: fit-content; 
-padding: 10px 10px 10px 10px; 
-
-
-}
-
-.answer {
-  color: white;
-  height: 0;
-  overflow: hidden;
-  transition: height 0.4s ease, opacity 0.4s ease;
-  opacity: 0;
-  font-size: 35px;
+  margin: 0;  
+  padding: 0; 
+  color: rgb(241, 241, 139); 
+  font-size: 50px; 
+  }
+  
+  p{
+  
   margin: 0;
-  padding: 0 15px;
-  cursor: pointer; 
-}
-
-.answer.open {
-  opacity: 1;
-
-}
-
-.test-div{
-
-display: flex; 
-justify-content: center;
-margin-bottom: 20px; 
-
-}
-
-.arrow {
-    display: inline-block;
-    transition: transform 0.3s;
-    margin-right: 10px;
-    font-size: 24px;
-    vertical-align: middle;
-    cursor: pointer;
-}
-
-.arrow.open {
-    transform: rotate(90deg);
-
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-    padding: 0.2em 0;
+  padding: 0; 
+  
   }
-
-  .faq-text {
-    font-size: 3.4rem;
-    padding: 0.5em 0 0 0 ;
-    word-break: break-word;
+  .faq-text{
+  
+    color: rgb(241, 241, 139);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-size: 100px; 
+  text-align: center;
+  margin: 0px 0px 20px 0px ; 
+  padding: 0; 
+  text-decoration: underline;
+  
   }
-
-  .faq-textwo {
-    font-size: 1.3rem;
-    padding: 0.3em 0.0em;
-    word-break: break-word;
+  
+  .faq-textwo{
+  
+  color: white; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-size: 55px; 
+  text-align: center;
+  margin: 0; 
+  padding: 0; 
+  
   }
-
-  .faq-textwo h1 {
-    font-size: 2.2rem;
+  
+  .faq-textwo h1{
+  
+  font-size: 65px; 
+  
   }
-
-  .background {
-    width: 95vw;
-    padding: 10px 2vw;
-    box-sizing: border-box;
-    margin: 0 auto 8px auto;
+  
+  .background{
+  
+  background-color: rgb(167, 47, 47); 
+  width: fit-content; 
+  padding: 10px 10px 10px 10px; 
+  
+  
   }
-
+  
   .answer {
-    font-size: 1.2rem;
-    padding: 0 0.5em;
+    color: white;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    font-size: 35px;
+    margin: 0;
+    padding: 0 15px;
+    cursor: pointer; 
+    /* ADDED: ensure full width and proper word breaking on all views */
+    width: 100%;
+    box-sizing: border-box;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
-
-  .test-div {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1em;
+  
+  .answer.open {
+    opacity: 1;
+  
   }
-
+  
+  .test-div{
+  
+  display: flex; 
+  justify-content: center;
+  margin-bottom: 20px; 
+  
+  }
+  
   .arrow {
-    font-size: 1.5rem;
-    margin-right: 0.4em;
+      display: inline-block;
+      transition: transform 0.3s;
+      margin-right: 10px;
+      font-size: 24px;
+      vertical-align: middle;
+      cursor: pointer;
   }
-}
+  
+  .arrow.open {
+      transform: rotate(90deg);
+  
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+      padding: 0.2em 0;
+    }
+  
+    .faq-text {
+      font-size: 3.4rem;
+      padding: 0.5em 0 0 0 ;
+      word-break: break-word;
+      width: 100vw; 
+      box-sizing: border-box; 
+    }
+  
+    .faq-textwo {
+      font-size: 1.3rem;
+      padding: 0.3em 0.0em;
+      overflow-wrap: break-word;
+    }
+  
+    .faq-textwo h1 {
+      font-size: 2.2rem;
+    }
+  
+    .background {
+      width: 95vw;
+      padding: 10px 2vw;
+      box-sizing: border-box;
+      margin: 0 auto 8px auto;
+    }
+  
+    .answer {
+      font-size: 1.1rem;    /* CHANGED from 1.5rem for better mobile flow */
+      padding: 0 0.5em;
+      width: 100%;           /* ADDED: force full width on mobile */
+      box-sizing: border-box;/* ADDED: padding included in width */
+      word-break: break-word;/* ADDED: break long words */
+      overflow-wrap: break-word; /* ADDED: break long words */
+    }
+  
+    .test-div {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+  
+    .arrow {
+      font-size: 1.5rem;
+      margin-right: 0.4em;
+    }
+  }
