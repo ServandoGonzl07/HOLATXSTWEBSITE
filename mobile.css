@@ -41,23 +41,43 @@
     justify-content: center;
   }
 
-  /* Selection Row (Navigation) */
+  /* Selection Row (Navigation) - SIDE DRAWER STYLE */
   .selectrow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height:900px; 
+    width: 200px; 
+    max-width: 320px;
+    background: rgb(153, 36, 36);
+    box-shadow: -2px 0 12px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    width: 100vw;
     padding: 0;
     margin: 0;
-    gap: 0px;
-    background: rgb(153, 36, 36);
+    z-index: 1500;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      transform 0.5s cubic-bezier(.6,0,.3,1),
+      opacity 0.4s ease;
+      gap: 50px;  
+  }
+  .selectrow.active {
+    transform: translateX(0%);
+    opacity: 1;
+    pointer-events: auto;
+    transition:
+      transform 0.5s cubic-bezier(.6,0,.3,1),
+      opacity 0.4s ease;
   }
   .selectrow > div {
-    width: 100%;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 1em 0;
     border-bottom: 1px solid #c22828;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
   }
   .selectrow > div:last-child {
     border-bottom: none;
@@ -164,7 +184,7 @@
     z-index: 1;
   }
   .bobcat-creep, .newpic-creep {
-    width: 100px;
+    width: 125px;
     min-width: 55px;
     max-width: 150px;
     height: auto;
@@ -174,9 +194,9 @@
     z-index: 2;
   }
   .newpic-creep {
-    right: -25%;
+    right: -30%;
     left: unset;
-    top: -300px;
+    top: -280px;
   }
 
   /* Event Section */
@@ -202,9 +222,7 @@
     text-align: center;
   }
   .proximo-text{
-
-    font-size: 3.5rem; 
-
+    font-size: 4.0rem; 
   }
 
   .evento-flex {
@@ -212,7 +230,6 @@
     align-items: center;
     justify-content: center;
     font-size: 0rem;
-
     background-color: rgb(170, 46, 46);
     border-radius: 0px;
     margin: 0.5em auto;
@@ -225,29 +242,49 @@
     font-size: 2.4rem;
   }
   .junta-pic {
-    width: 90vw;
+    width: 80vw;
     max-width: 320vw;
     height: 50vw; 
     object-fit: cover;
     margin: 0.7em auto;
-    display: block;
+    display: block; 
     padding: 0; 
   }
 
   .menu-toggle {
     display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    z-index: 1501;
     background: rgb(153, 36, 36);
     color: #fff;
     border: none;
     font-size: 2.5rem;
     cursor: pointer;
-    width: 100vw;
-    text-align: left;
-    z-index: 1100;
-    position: relative;
   }
 
-  .selectrow {
+  /* Overlay for side menu (dimming background) */
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.28);
+    z-index: 1499;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  .menu-overlay.active {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
+
+  /* Remove the old dropdown transitions */
+  /* .selectrow {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s cubic-bezier(.1,0.9,.5,1);
@@ -255,16 +292,7 @@
   .selectrow.active {
     max-height: 1000px;
     transition: max-height 0.8s cubic-bezier(.9,0.9,.9,1);
-  }
-
-  .meet{
-
-  font-size: 4.0rem; 
-    
-  }
-  
-
-  
+  } */
 
   /* Footer */
   footer.copyright-laws {
@@ -277,6 +305,10 @@
     word-break: break-word;
   }
 }
+
+
+
+
 
 
 
