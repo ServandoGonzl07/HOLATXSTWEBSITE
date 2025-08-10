@@ -184,12 +184,12 @@
     z-index: 1;
   }
   .bobcat-creep, .newpic-creep {
-    width: 125px;
+    width: 110px;
     min-width: 55px;
     max-width: 150px;
     height: auto;
     position: absolute;
-    left: 5%;
+    left: 9%;
     top: -70px;
     z-index: 2;
   }
