@@ -82,20 +82,38 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const selectRow = document.querySelector('.selectrow');
 
-  if (menuToggle && selectRow) {
-    menuToggle.addEventListener('click', function() {
-      selectRow.classList.toggle('active');
-      if (selectRow.classList.contains('active')) {
-        menuToggle.innerHTML = '&times;';
-        menuToggle.setAttribute('aria-label', 'Close menu');
-      } else {
-        menuToggle.innerHTML = '&#9776;';
-        menuToggle.setAttribute('aria-label', 'Open menu');
-      }
-    });
+document.addEventListener('DOMContentLoaded', function () {
+  const menuBtn = document.querySelector('.menu-toggle');
+  const selectRow = document.querySelector('.selectrow');
+  const overlay = document.querySelector('.menu-overlay');
+
+  function openMenu() {
+    selectRow.classList.add('active');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent background scroll
   }
+
+  function closeMenu() {
+    selectRow.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scroll
+  }
+
+  menuBtn.addEventListener('click', function () {
+    if (selectRow.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  overlay.addEventListener('click', closeMenu);
+
+  // Optional: Close menu on ESC key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape" && selectRow.classList.contains('active')) {
+      closeMenu();
+    }
+  });
 });
