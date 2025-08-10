@@ -24,7 +24,8 @@ document.write(`
       </div>
     </div>
 
- <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+  <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+  <div class="menu-overlay"></div>
     
     <div class="selectrow">
       <div class ="membership">
