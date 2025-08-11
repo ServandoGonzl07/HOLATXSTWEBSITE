@@ -28,6 +28,9 @@ document.write(`
   <div class="menu-overlay"></div>
     
     <div class="selectrow">
+    <div class="membership">
+        <a href="index.html" rel="noopener noreferrer"><p>Home</p></a>
+      </div>
       <div class ="membership">
         <a href="membership.html">Membership</a>
       </div>
