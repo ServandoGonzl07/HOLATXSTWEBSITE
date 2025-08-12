@@ -259,7 +259,7 @@
     width: 60px;
     height: 60px;
     z-index: 1501;
-    background: rgb(153, 36, 36);
+    background: rgba(162, 35, 35, 0.279);
     color: #fff;
     border: none;
     font-size: 2.5rem;
