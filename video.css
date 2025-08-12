@@ -300,7 +300,7 @@ padding-bottom: 50px;
       animation-delay: 0.2s;
     }
     
-    .video-div img {
+    .container{
       opacity: 0;
       animation: fadeInDown 0.75s ease forwards;
       animation-delay: 0.5s;
@@ -327,3 +327,176 @@ padding-bottom: 50px;
         }
 
     } 
+
+    
+* {
+
+margin: 0; 
+padding: 0; 
+box-sizing: border-box; 
+
+}
+
+
+.slider-wrapper .image-list{
+
+display: grid; 
+grid-template-columns: repeat(10,1fr);
+gap: 18px; 
+font-size: 0; 
+margin-bottom: 30px;
+overflow-x: auto; 
+scrollbar-width: none; 
+
+
+}
+
+.slider-wrapper .image-list::webkit-scrollbar{
+
+display: none; 
+
+}
+
+.slider-wrapper .image-list .image-item{
+
+width: 350px;
+height: 475px; 
+object-fit: cover; 
+
+}
+
+.container{
+
+max-width: 1600px; 
+width: 100%; 
+
+}
+.slider-wrapper{
+
+position: relative; 
+
+}
+
+.slider-wrapper .slide-button{
+position: absolute; 
+height: 50px; 
+border: none; 
+width: 50px; 
+outline: none; 
+color: white; 
+background: black; 
+font-size: 2.2 rem; 
+cursor: pointer; 
+border-radius: 50%; 
+top: 50%; 
+transform: translateY(-50%);
+
+}
+
+.slider-wrapper .slide-button:hover{
+
+background: #444; 
+
+}
+
+.slider-wrapper .slide-button#prev-slide{
+
+  left: -20px; 
+  display: none; 
+
+}
+.slider-wrapper .slide-button#next-slide{
+
+  right: -20px; 
+
+}
+
+.container .slider-scrollbar{
+
+height: 24px; 
+width: 100%; 
+display: flex; 
+align-items: center;
+
+}
+
+.slider-scrollbar .scrollbar-track{
+
+height: 2px; 
+width: 100%; 
+background: white; 
+border-radius: 4px; 
+position: relative; 
+
+}
+
+.slider-scrollbar:hover .scrollbar-track{
+
+ height: 4px; 
+
+
+}
+
+
+.slider-scrollbar .scrollbar-thumb{
+  position: absolute;
+  height: 100%; 
+  width: 50%; 
+  background: black; 
+  border-radius: inherit; 
+  cursor: grab; 
+  
+  }
+  .slider-scrollbar .scrollbar-thumb:active{
+
+    cursor: grabbing; 
+    height: 8px; 
+    top: -2px; 
+
+
+  }
+
+
+  .slider-scrollbar .scrollbar-thumb::after{
+
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: -10px; 
+    bottom: -10px; 
+
+  }
+
+
+@media (max-width: 1023px){
+
+.slider-wrapper .slide-button{
+
+  display: none!important; 
+
+
+}
+
+.slider-wrapper .image-list{
+
+gap: 10px; 
+margin-bottom: 15px;
+
+}
+
+.slider-wrapper .image-list .image-item{
+
+  width: 280px; 
+  height: 380px; 
+
+}  
+
+.slider-scrollbar .scrollbar-thumb{
+
+  width: 20%; 
+
+}
+
+}
+
