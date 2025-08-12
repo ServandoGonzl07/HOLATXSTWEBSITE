@@ -282,6 +282,11 @@
     opacity: 1;
     transition: opacity 0.4s;
   }
+    .bobcat-creep,.newpic-creep{
+
+    display: none !important; 
+
+  }
 
   /* Remove the old dropdown transitions */
   /* .selectrow {
