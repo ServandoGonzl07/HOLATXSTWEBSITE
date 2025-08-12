@@ -176,7 +176,7 @@
   .holapic {
     width: 100vw; 
     max-width: 350px;
-    height: auto;
+    height: 250px; 
     border-radius: 8px;
     margin: 0 auto;
     display: block;
