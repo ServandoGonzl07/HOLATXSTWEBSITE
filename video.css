@@ -30,9 +30,6 @@
     margin-top:1px;
   }
   
-  .video-div {
-    margin: 0; /* Remove the top/bottom margin if you want tight spacing, or adjust as needed */
-  }
 
   .join-text{
 
@@ -48,7 +45,7 @@
     margin: 0; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
     color: rgb(241, 241, 139); 
-    letter-spacing: 10px;
+    letter-spacing: 10px; 
 
   }
 
@@ -303,7 +300,7 @@ padding-bottom: 50px;
     .container{
       opacity: 0;
       animation: fadeInDown 0.75s ease forwards;
-      animation-delay: 0.5s; 
+      animation-delay: 0.5s;
       width: 100%;  
       object-fit: cover; 
     }
@@ -337,17 +334,13 @@ box-sizing: border-box;
 }
 
 
-.slider-wrapper .image-list{
-
-display: grid; 
-grid-template-columns: repeat(10,1fr);
-gap: 18px; 
-font-size: 0; 
-margin-bottom: 30px;
-overflow-x: auto; 
-scrollbar-width: none; 
-
-
+.slider-wrapper .image-list {
+  display: flex;
+  gap: 18px;
+  font-size: 0;
+  /* Remove grid, set scroll-behavior to auto for JS control */
+  overflow: visible; /* or hidden/auto, but overflow is masked by .slider-wrapper */
+  scroll-behavior: auto;
 }
 
 .slider-wrapper .image-list::webkit-scrollbar{
@@ -370,9 +363,57 @@ max-width: 1600px;
 width: 100%; 
 
 }
-.slider-wrapper{
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* or your preferred width */
+  overflow: hidden; /* This masks the overflow */
+}
 
-position: relative; 
+@keyframes slide{
+
+0%{
+
+transform: translateX(0); 
+
+}
+
+25%{
+
+  transform: translateX(0); 
+
+}
+
+30%{
+
+  transform: translateX(-100%); 
+
+}
+50%{
+
+  transform: translateX(-100%); 
+
+}
+55%{
+
+  transform: translateX(-200%); 
+
+}
+75%{
+
+  transform: translateX(-200%); 
+
+}
+80%{
+
+  transform: translateX(-300%); 
+
+}
+100%{
+
+  transform: translateX(-300%); 
+
+}
 
 }
 
@@ -470,6 +511,7 @@ position: relative;
 
 @media (max-width: 1023px){
 
+
 .slider-wrapper .slide-button{
 
   display: none!important; 
@@ -480,14 +522,13 @@ position: relative;
 .slider-wrapper .image-list{
 
 gap: 10px; 
-margin-bottom: 15px;
 
 }
 
 .slider-wrapper .image-list .image-item{
 
   width: 280px; 
-  height: 300px; 
+  height: 380px; 
 
 }  
 
