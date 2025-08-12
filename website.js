@@ -118,46 +118,62 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const initSlider = () => {
-const imageList = document.querySelector(".slider-wrapper .image-list ");
-const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button ");
-const sliderScrollbar = document.querySelector(".container .slider-scrollbar");
-const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
-const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth; 
+window.addEventListener('DOMContentLoaded', function () {
+  const imageList = document.querySelector('.slider-wrapper .image-list');
+  const images = Array.from(imageList.querySelectorAll('.image-item'));
 
-slideButtons.forEach(button => {
-    button.addEventListener("click", () =>{
-        const direction = button.id === "prev-slide" ? -1 : 1; 
-        const scrollAmount = imageList.clientWidth * direction; 
-        imageList.scrollBy({left: scrollAmount, behavior: "smooth"}); 
+  // Wait for all images to load
+  let loadedCount = 0;
+  images.forEach(img => {
+    if (img.complete) {
+      loadedCount++;
+    } else {
+      img.addEventListener('load', () => {
+        loadedCount++;
+        if (loadedCount === images.length) {
+          startCarousel();
+        }
+      });
+      img.addEventListener('error', () => {
+        loadedCount++; // still count errors so it doesn't hang forever
+        if (loadedCount === images.length) {
+          startCarousel();
+        }
+      });
+    }
+  });
+  // If all images already loaded
+  if (loadedCount === images.length) {
+    startCarousel();
+  }
 
+  function startCarousel() {
+    // Use the images at the time of function call (all should be loaded)
+    const imagesNow = Array.from(imageList.querySelectorAll('.image-item'));
+    const imgCount = imagesNow.length;
+
+    // Clone all images and append them
+    imagesNow.forEach(img => {
+      const clone = img.cloneNode(true);
+      imageList.appendChild(clone);
     });
-    
+
+    // Calculate width
+    const gap = 18;
+    const imgWidth = imagesNow[0].offsetWidth + gap;
+    const originalWidth = imgWidth * imgCount;
+
+    let translateX = 0;
+
+    function animate() {
+      translateX -= 2;
+      if (Math.abs(translateX) >= originalWidth) {
+        translateX = 0;
+      }
+      imageList.style.transform = `translateX(${translateX}px)`;
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  }
 });
-
-const handleSlideButtons = () => {
-
-    slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "block"; 
-    slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "block"; 
-
-
-}
-
-const updateScrollThumbPosition = () => {
-
-const scrollPosition = imageList.scrollLeft; 
-const thumbPosition = (scrollPosition / maxScrollLeft) *  (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth); 
-scrollbarThumb.style.left = `${thumbPosition}px`; 
-
-}
-
-imageList.addEventListener("scroll" , () => {
-
-handleSlideButtons();
-updateScrollThumbPosition(); 
-
-})
-
-}
-
-window.addEventListener("load", initSlider); 
