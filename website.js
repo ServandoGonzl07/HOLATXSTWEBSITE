@@ -1,3 +1,4 @@
+
 // Disable automatic scroll restoration if supported
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
