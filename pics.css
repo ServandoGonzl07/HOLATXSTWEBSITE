@@ -97,9 +97,7 @@ text-decoration: none;
         flex-direction: column;
         align-items: center;
         gap: 25px;
-        width: 100%;
-        padding-left: 40px;
-        padding-right: 40px;  
+        width: 100%; 
     }
     .pic-inside {
         width: 200px;
