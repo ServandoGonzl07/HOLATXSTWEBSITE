@@ -44,7 +44,7 @@ document.write(`
         <a href="questions.html">Questions</a>
       </div>
       <div class="officers">
-        <a href="officers.html">Officers</a>
+        <a href="officers.html">About</a>
       </div>
     </div>
     `);
