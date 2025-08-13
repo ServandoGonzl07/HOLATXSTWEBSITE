@@ -1,0 +1,140 @@
+
+.inside{
+
+display: flex; 
+text-align: center; 
+align-items: center; 
+width: fit-content;
+height: fit-content; 
+cursor: pointer; 
+margin-top: 20px; 
+margin-left: 20px; 
+margin-right: 20px; 
+background-color: rgb(138, 28, 28); 
+transition: background-color 0.2s ease, 
+padding 0.2s ease; 
+
+}
+
+.pic-inside{
+
+width: 300px; 
+height: 300px; 
+object-fit: cover;
+
+}
+
+.holachella{
+
+font-size: 70px; 
+text-align: center;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+color: rgb(241, 241, 139);
+margin-right: 20px; 
+margin-left: 20px; 
+
+
+}
+
+.inside:hover{
+background-color: rgb(164, 36, 36); 
+padding: 0px 40px 0px 40px; 
+
+
+
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Or center, as needed */
+    gap: 20px; /* Optional: space between the two divs */
+    justify-content: center; 
+}
+
+.side-div {
+    /* Style as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.href{
+
+text-decoration: none;
+
+}
+.main-container{
+    opacity: 0;
+    animation: fadeInDown 0.75s ease forwards;
+    animation-delay: 0.15s;
+  }
+
+  @media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .pic-inside {
+        width: 220px;
+        height: 220px;
+    }
+    .holachella {
+        font-size: 40px;
+        margin: 10px 0;
+    }
+    .inside, .outside, .side-div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Phones (<= 600px) */
+@media (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+    .pic-inside {
+        width: 200px;
+        height: 180px;
+    }
+    .holachella {
+        font-size: 5rem; 
+        margin: 5px 0;
+    }
+    .inside, .outside, .side-div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    footer.copyright-laws {
+        font-size: 12px;
+        padding: 8px;
+        text-align: center;
+    }
+    .inside:hover{
+        background-color: rgb(164, 36, 36); 
+        padding: 0; 
+        
+        
+        
+        }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
