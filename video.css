@@ -166,10 +166,12 @@
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 color: white; 
 font-size: 80px; 
-margin: 0; 
-padding: 0; 
+padding-top: 10px; 
+padding-bottom: 5px; 
 
     }
+
+
 
     .eventext-flex{
 
