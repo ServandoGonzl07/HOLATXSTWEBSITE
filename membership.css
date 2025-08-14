@@ -15,7 +15,6 @@ h2 {
   margin: 28px 0 0 0;
 }
 
-
 /* Offer Text */
 .offer-text {
   color: var(--main-yellow);
@@ -29,16 +28,13 @@ h2 {
 .espera-text {
   font-family: var(--main-font);
   text-align: center;
-  justify-content: center;
 }
-
 .espera-inside {
   color: var(--main-yellow);
   font-size: 100px;
   margin: 35px 0 0 0;
   font-family: var(--main-font);
   text-align: center;
-  justify-content: center;
 }
 
 /* Inner Content */
@@ -49,12 +45,12 @@ h2 {
 }
 
 /* Flex Layouts */
-.inside-first,
-.first-row {
+.first-row,
+.inside-first {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 /* Pictures */
@@ -75,7 +71,7 @@ h2 {
 }
 
 /* Familia Boxes */
-.familia1, .familia2, .familia3,.familia4,.familia5 {
+.familia1, .familia2, .familia3, .familia4, .familia5 {
   background-color: var(--main-red);
   padding: 0 20px;
   opacity: 0;
@@ -95,16 +91,13 @@ h2 {
   font-size: 80px;
   border-radius: 50px;
   font-family: var(--main-font);
-  transition:
-    padding 0.2s ease,
-    background-color 0.2s ease;
+  transition: padding 0.2s ease, background-color 0.2s ease;
 }
 .unete-button:hover {
   background-color: var(--main-red-hover);
   cursor: pointer;
   padding: 0 40px;
 }
-
 
 /* Main Content Flex-grow */
 .main-content {
@@ -113,79 +106,18 @@ h2 {
 
 /* Animation Keyframes */
 @keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-25px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(-25px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .offer-text {
     font-size: 2.9rem;
-    margin: 20px 0 0px 0;
-    margin-left: 0;
+    margin: 20px 0 0 0;
     text-align: center;
     word-break: break-word;
   }
-
-  .familia4 {
-    background-color: var(--main-red);
-    padding: 0 20px;
-    opacity: 0;
-    animation: fadeInDown 0.75s ease forwards;
-    animation-delay: 0.2s;
-  }
-
-  
-  .familia4 {
-    background-color: var(--main-red);
-    padding: 0 20px;
-    opacity: 0;
-    animation: fadeInDown 0.75s ease forwards;
-  }
-    
-    .familia4 {
-      padding: 10px;
-      margin-bottom: 10px; 
-      font-size: 1em;
-    }
-    .familia4 h2 {
-      font-size: 1.6rem;
-      margin: 10px 0 6px 0;
-    }
-    .familia4 p {
-      font-size: 1rem;
-      margin: 0 0 8px 0;
-      line-height: 1.35;
-    }
-
-    .familia5 {
-      background-color: var(--main-red);
-      padding: 0 20px;
-      opacity: 0;
-      animation: fadeInDown 0.75s ease forwards;
-    }
-
-
-    .familia5 {
-      padding: 10px;
-      margin: 0;
-      font-size: 1em;
-    }
-    .familia5 h2 {
-      font-size: 1.6rem;
-      margin: 10px 0 6px 0;
-    }
-    .familia5 p {
-      font-size: 1rem;
-      margin: 0 0 8px 0;
-      line-height: 1.35;
-    }
 
   .first-row,
   .inside-first {
@@ -204,17 +136,25 @@ h2 {
     text-align: center;
   }
 
-  .familia1, .familia2, .familia3 {
+  .familia1, .familia2, .familia3, .familia4, .familia5 {
     padding: 10px;
     margin: 10px 0;
     font-size: 1em;
+    background-color: var(--main-red);
+    opacity: 0;
+    animation: fadeInDown 0.75s ease forwards;
   }
+  .familia1 { animation-delay: 0.25s; }
+  .familia2 { animation-delay: 0.35s; }
+  .familia3 { animation-delay: 0.45s; }
+  .familia4 { animation-delay: 0.55s; }
+  .familia5 { animation-delay: 0.65s; }
 
-  .familia1 h2, .familia2 h2, .familia3 h2 {
+  .familia1 h2, .familia2 h2, .familia3 h2, .familia4 h2, .familia5 h2 {
     font-size: 1.6rem;
     margin: 10px 0 6px 0;
   }
-  .familia1 p, .familia2 p, .familia3 p {
+  .familia1 p, .familia2 p, .familia3 p, .familia4 p, .familia5 p {
     font-size: 1rem;
     margin: 0 0 8px 0;
     line-height: 1.35;
@@ -246,21 +186,11 @@ h2 {
     border-radius: 30px;
     margin: 15px 0 10px 0;
   }
-    .hide-on-mobile {
-      display: none !important;
-    }
 
-  /* Animation delays for mobile */
-  .familia1 { animation-delay: 0.25s; }
-  .familia2 {animation-delay: 0.35s;}
-  .familia3{animation-delay: 0.45s;}
-  .familia4{animation-delay: 0.55s;}
-  .familia5{animation-delay: 0.65s;}
+  .hide-on-mobile {
+    display: none !important;
+  }
 
-
-
-
-  /* Copyright law footer padding for mobile */
   footer.copyright-laws {
     font-size: 0.89em;
     padding: 0.7em 0.2em;
