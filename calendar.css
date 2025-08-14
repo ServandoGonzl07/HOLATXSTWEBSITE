@@ -26,6 +26,7 @@
     display: flex; 
     justify-content: center;
     align-items: center;
+     background-color: rgb(167, 47, 47);
   }
   
   .inside-div p {
