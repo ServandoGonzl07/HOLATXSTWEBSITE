@@ -126,7 +126,7 @@ h1{
     }
   
     .answer {
-      font-size: 1.3rem;    /* CHANGED from 1.5rem for better mobile flow */
+      font-size: 1.19rem;    /* CHANGED from 1.5rem for better mobile flow */
       padding: 0 0.5em;
       width: 100%;           /* ADDED: force full width on mobile */
       box-sizing: border-box;/* ADDED: padding included in width */
@@ -141,7 +141,7 @@ h1{
     }
   
     .arrow {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-right: 0.4em;
     }
   }
