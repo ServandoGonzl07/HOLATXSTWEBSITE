@@ -1,42 +1,46 @@
-html,body{
-  height: 100%; 
-    margin: 0; 
-    padding: 0;
-
-    
-
-
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  body {
-    height: 
-    fit-content; 
-      display: flex;
-      flex-direction: column;
-      background-color: rgb(149, 49, 49); 
-    }
-    .main-content {
-      flex: 1;
-    }
+html, body {
+  height: 100%;
+}
 
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(149, 49, 49);
+}
 
-footer.copyright-laws {           /* Pushes the footer to the bottom */
-  /* Optional styling: */
+.main-content {
+  flex: 1;
+}
+
+/* Footer */
+footer.copyright-laws {
   background: rgb(153, 36, 36);
   color: #fff;
   text-align: center;
   padding: 1em 0;
   font-size: 1em;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
-html{
-
-scroll-behavior: smooth;
-
+/* Top Row */
+.toprow-div {
+  background-color: rgb(170, 46, 46);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-
 
 .toprow {
   display: flex;
@@ -50,101 +54,68 @@ scroll-behavior: smooth;
   min-width: 180px;
 }
 
+.right {
+  margin-left: 15px;
+}
+
+.right p {
+  color: white;
+  font-size: 23px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .middle {
   flex: 0 1 auto;
   text-align: center;
 }
 
 .middle a {
-  text-decoration: none; /* Removes the underline */
-  color: inherit; /* Inherits the text color from parent element */
+  text-decoration: none;
+  color: inherit;
 }
 
 .middle p {
-
-font-size: 80px; 
-color:  rgb(255, 255, 255); 
-font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-weight: bold;
-
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
 }
 
-
-.right{
-margin-left: 15px; 
+.left {
+  margin-right: 15px;
 }
 
-.right p {
-
-color: white; 
-font-size: 23px; 
-font-family: Georgia, 'Times New Roman', Times, serif; 
-
+.right-side {
+  display: flex;
+  justify-content: right;
 }
 
-.insta,.example{
-
-width: 50px; 
-height: 50px; 
-margin-right: 20px; 
+.insta,
+.example,
+.xlogo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
 }
 
-.xlogo{
-
-width: 50px;
-height: 50px; 
-margin-right: 20px; 
-
-}
-.social-flex{
-
-justify-content: space-between; 
-
-}
-
-
-
-.toprow-div{
-    background-color: rgb(170, 46, 46); 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    margin-bottom: 0; 
-    padding-bottom: 0; 
-
-}
-
-
+/* Animation */
 @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-5px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
   }
-
-  .fade-effect{
-
-    opacity: 0;                               /* Start invisible */
-    animation: fadeInDown 1.0s ease forwards;     /* Animation name, duration, easing, keep final state */
-    animation-delay: 0.1s;                    /* Delay before starting */
-
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-
-.right-side{
-
-  display: flex; 
-  justify-content: right; 
 }
 
-.left{
-
-margin-right: 15px; 
-
+.fade-effect {
+  opacity: 0;
+  animation: fadeInDown 1.0s ease forwards;
+  animation-delay: 0.1s;
 }
+
 
 
 
