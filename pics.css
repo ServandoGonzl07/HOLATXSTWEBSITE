@@ -112,6 +112,8 @@ text-decoration: none;
     .inside, .outside, .side-div {
         margin-left: 0;
         margin-right: 0;
+        width: 400px; 
+        justify-content: space-between; 
     }
     body {
         padding: 0;
