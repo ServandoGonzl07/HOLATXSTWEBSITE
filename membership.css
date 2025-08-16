@@ -138,7 +138,7 @@ h2 {
 
   .familia1, .familia2, .familia3, .familia4, .familia5 {
     padding: 10px;
-    margin: 10px 0;
+    margin-top: 10px; 
     font-size: 1em;
     background-color: var(--main-red);
     opacity: 0;
