@@ -81,9 +81,17 @@ text-decoration: none;
     color: rgb(241, 241, 139);
     text-decoration: underline;
     margin-top: 15px; 
+    animation: fadeInDown 0.75s ease forwards;
 
 
   }
+
+  
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-25px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
 
   @media (max-width: 900px) {
     .main-container {
