@@ -4,8 +4,6 @@
 display: flex; 
 text-align: center; 
 align-items: center; 
-width: fit-content;
-height: fit-content; 
 cursor: pointer; 
 margin-top: 20px; 
 margin-left: 20px; 
@@ -13,6 +11,7 @@ margin-right: 20px;
 background-color: rgb(167, 47, 47); 
 transition: background-color 0.2s ease, 
 padding 0.2s ease; 
+
 
 }
 
@@ -22,12 +21,12 @@ width: 300px;
 height: 250px; 
 object-fit: cover;
 display: block; 
-
 }
+
 
 .holachella{
 
-font-size: 70px; 
+font-size: 40px; 
 text-align: center;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 color: rgb(241, 241, 139);
@@ -85,7 +84,6 @@ text-decoration: none;
     }
     .holachella {
         font-size: 40px;
-        margin: 10px 0;
     }
     .inside, .outside, .side-div {
         margin-left: 0;
@@ -99,22 +97,21 @@ text-decoration: none;
         flex-direction: column;
         align-items: center;
         gap: 25px;
-        width: 100%; 
+     
     }
     .pic-inside {
         width: 200px;
-        height: 150px;
+        height: 130px;
     }
     .holachella {
         font-size: 2.4rem; 
-        margin: 5px 0;
     }
     .inside, .outside, .side-div {
         margin-left: 0;
         margin-right: 0;
-        width: 400px; 
-        justify-content: space-between; 
+        justify-content: space-between;
     }
+    
     body {
         padding: 0;
         margin: 0;
@@ -144,4 +141,5 @@ text-decoration: none;
         transform: translateY(0);
     }
 }
+
 
