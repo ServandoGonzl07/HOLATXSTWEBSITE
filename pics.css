@@ -26,7 +26,7 @@ display: block;
 
 .holachella{
 
-font-size: 40px; 
+font-size: 60px; 
 text-align: center;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 color: rgb(241, 241, 139);
@@ -75,7 +75,7 @@ text-decoration: none;
   .event-text{
 
     text-align: center; 
-    font-size: 60px; 
+    font-size: 80px; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0; 
     color: rgb(241, 241, 139);
@@ -150,6 +150,11 @@ text-decoration: none;
         
         
         }
+
+    .event-text{
+    font-size: 3.2rem; 
+
+    }
 }
 
 @keyframes fadeInDown {
